@@ -7,7 +7,7 @@ function Table(props) {
 
     useEffect(() => {
         setEmployees(props.employees)
-    }, [])
+    }, [props.employees])
 
     return (
         <div>

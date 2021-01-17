@@ -7,7 +7,7 @@ function Chart(props) {
 
     useEffect(() => {
         setEmployees(props.employees)
-    }, [])
+    }, [props.employees])
 
     const chartData = {
         labels: employees.map(employee => employee.employee_name),
