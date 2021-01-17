@@ -1,13 +1,9 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import '../styles/Table.css'
 
 function Table(props) {
 
-    let [employees, setEmployees] = useState([])
-
-    useEffect(() => {
-        setEmployees(props.employees)
-    }, [props.employees])
+    let employees = props.employees
 
     return (
         <div>

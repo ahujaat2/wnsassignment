@@ -1,13 +1,9 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import {Bar} from 'react-chartjs-2'
 
 function Chart(props) {
 
-    let [employees, setEmployees] = useState([])
-
-    useEffect(() => {
-        setEmployees(props.employees)
-    }, [props.employees])
+    const employees = props.employees
 
     const chartData = {
         labels: employees.map(employee => employee.employee_name),
