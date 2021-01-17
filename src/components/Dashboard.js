@@ -10,7 +10,7 @@ function Dashboard() {
     const [loggedIn, setLoggedIn] = useState(sessionStorage.getItem('username'))
 
     useEffect(() => {
-        fetch('http://dummy.restapiexample.com/api/v1/employees')
+        fetch('https://dummy.restapiexample.com/api/v1/employees')
         .then(res => res.json())
         .then(res => setEmployees(res.data))
     }, [])
